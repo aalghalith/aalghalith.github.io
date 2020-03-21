@@ -132,7 +132,7 @@ body {
 .Courses-subjects {
     position: absolute;
     text-align: center;
-    top: -4.1vh;
+    top: -2.8vh;
     color: White;
     width: 100%;
     font-size: min(max(0.5em,3vw),2em);
