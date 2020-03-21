@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'/>
+    <meta name='viewport' content='width=device-width,initial scale=1'>
+    <title>Home</title>
+    <link rel='favicon' href='favicon.ico'>
+    <link rel='apple-touch-icon' href='apple-touch-icon.png'>
+    <link rel='stylesheet' href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='Styles.css'>
+    
+</head>
+<body>
+    <div class='container'>
+        
+        <div class='nav-wrapper'>
+            
+            <div class='left-side'>
+                <div class='nav-link-wrapper'>
+                    <a href='index.html'>Home</a>
+                </div>
+                <div class='nav-link-wrapper'>
+                    <a href='Career.html'>Career</a>
+                </div>
+                <div class='nav-link-wrapper active-nav-link'>
+                    <a href='Misc.html'>Misc</a>
+                </div>
+            </div>
+            
+            <div class='right-side'>
+                <div class='brand'>
+                    ADAM ALGHALITH
+                    <a class="fa fa-twitter" href='https://twitter.com/AdamAlghalith'>
+                    </a>
+                    <a class="fa fa-linkedin" href='https://www.linkedin.com/in/adam-alghalith'></a>
+                    <i class="fa fa-github"></i>
+                </div>    
+            </div>
+        </div>
+    </div>
+    
+    <div class='Career-sep'>
+        <h2>I've learned about ...</h2>
+    </div>
+
+
+    <div class='content-wrapper'>
+         <div class='Courses'>
+            <div class='Courses-elements'>
+                
+                <div class="Courses-img-background" style="background-image:url(/assets/Physics.jfif)">
+                </div>
+        
+                <div class='Courses-subjects'>
+                    <h2>Physics</h2>
+                </div>  
+                
+                <div class='Courses-names'>
+                    <div class="subtitle">
+                        <ul>
+                            <li>Quantum Mechanics</li>
+                            <li>Electricity and Magnetism</li>
+                            <li>Classical Mechanics</li>
+                            <li>Statistical Mechanics</li>
+                            <li>Stellar Astrophysics</li>
+                            <li>Data Analysis</li>
+                        </ul>
+                    </div>
+                </div>
+        
+             </div>
+        
+            <div class='Courses-elements'>
+                
+                <div class="Courses-img-background" style="background-image:url(/assets/Lac_Repressor.png)">
+                </div>
+        
+                <div class='Courses-subjects'>
+                    <h2>Biochemistry</h2>
+                </div>  
+                
+                <div class='Courses-names'>
+                    <div class="subtitle">
+                        <ul>
+                            <li>CARs & 
+                                <a class = 'articles' href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5343513/'>CAARs</a> for 
+                                
+                                <a class='articles' href='https://www.sciencedirect.com/science/article/pii/S095279151930010X'>B cell mediated autoimmune disease</a>
+                            </li>
+                            <li>
+                                <a class='articles' href='https://youtu.be/4eMxqR-zhA0'>Cadherins</a> 
+                                
+                                & Pemphigus Vulgaris
+                            </li>
+                            <li>Synthetic Biology</li>
+                        </ul>
+                    </div>
+                </div>
+        
+             </div>
+             
+            <div class='Courses-elements'>
+                
+                <div class="Courses-img-background" style="background-image:url(/assets/Goodsell_Zika.png)">
+                </div>
+        
+                <div class='Courses-subjects'>
+                    <h2>Biophysics</h2>
+                </div>  
+                
+                <div class='Courses-names'>
+                    <div class="subtitle">
+                        <ul>
+                            <li>Behavior of Light</li>
+                            <li>Models of Photon Detection in Humans</li>
+                            <li>Microscopy Techniques</li>
+                            <li>
+                                <a class='articles' href='https://www.frontiersin.org/articles/10.3389/fimmu.2016.00077/full'>Modeling</a> 
+                            
+                                B cell population dynamics 
+                            </li>
+                            <li>Models of polymers </li>
+                        </ul>
+                    </div>
+                </div>
+        
+             </div>
+        
+        </div>
+    
+    </div>
+    
+    <div class='Career-sep'>
+        <h2>I work with <a href='https://camara-lab.org/'>Dr. Pablo Camara</a> 
+        </h2>
+        <h3 style='text-align:left;padding-left:150px;padding-right:500px;font-size:1.3em'>
+            I do single-cell genomic and transcriptomic analyses of cancer. I've identified somatic mutations of ependymal tumors using Broad's GATK and searched for these mutations in accompanying single-cell transcriptomic data to learn more about the ependymal tumor microenvironment. Currently, I am developing a user-friendly 
+            
+            <a href='/assets/TDA-TCGA-CamaraLab.pdf'>tool</a> 
+
+            based on the 
+            
+            <a href='/assets/Mapper-Carlsson-Singh.pdf'>Mapper algorithm </a>
+            
+            which identifies potential oncogenic driver mutations using expression and mutation data.
+        </h3>
+    
+    </div>
+    
+    <div class='Career-sep'>
+        <h2>After quarantine, I will be training as a physician-scientist</h2>
+    </div>
+    
+    <div class='MSTP'>
+        <div class="MSTP-img" style="background-image:url(/assets/UCLA_Caltech.jfif)">
+        
+        </div>
+    
+    </div>
+    
+</body> 
+
+<script>
+    const subjects = document.querySelectorAll('.Courses-elements');
+
+    subjects.forEach(subject => {
+        subject.addEventListener('mouseover', () => {
+        subject.childNodes[1].classList.add('image-blur');
+        });
+
+    subject.addEventListener('mouseout', () => {
+        subject.childNodes[1].classList.remove('image-blur');
+        });
+    });
+</script>
+    
+<div class='footer'>
+    <p style='padding-right:20px;'>Biophysics photo: David Goodsell 2016</p>
+</div>
+
+    
+</html>
+    
