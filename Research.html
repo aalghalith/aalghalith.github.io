@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'/>
+    <meta name='viewport' content='width=device-width,initial scale=1,maximum-scale=1,user-scalable=0'>
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+    <title>Adam Alghalith | Research</title>
+    <link rel='favicon' href='/assets/favicon.ico'>
+    <link rel='apple-touch-icon' sizes='120x120' href='/assets/apple-touch-icon.png'>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel='stylesheet' href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='Styles.css'>
+    
+</head>
+<body>
+    <div class='container'>
+        
+        <div class='nav-wrapper'>
+            
+            <div class='left-side'>
+                <div class='nav-link-wrapper'>
+                    <a href='index.html'>Home</a>
+                </div>
+                <div class='nav-link-wrapper active-nav-link'>
+                    <a href='Research.html'>Research</a>
+                </div>
+                <div class='nav-link-wrapper'>
+                    <a href='Misc.html'>Misc</a>
+                </div>
+            </div>
+            
+            <div class='right-side'>
+                <div class='brand'>
+                    ADAM ALGHALITH
+                    <a class="fa fa-twitter" href='https://twitter.com/AdamAlghalith'>
+                    </a>
+                    <a class="fa fa-linkedin" href='https://www.linkedin.com/in/adam-alghalith'></a>
+                    <a class="fa fa-github"
+                    href='https://github.com/aalghalith'></a>
+                </div>    
+            </div>
+        </div>
+    </div>
+    
+    <div class='Career-sep'>
+        <h2>I've learned about ...</h2>
+    </div>
+
+
+    <div class='content-wrapper'>
+         <div class='Courses'>
+            <div class='Courses-elements'>
+                
+                <div class="Courses-img-background" style="background-image:url(/assets/TDA.png)">
+                </div>
+        
+                <div class='Courses-subjects'>
+                    <!--<h2>Topological Data Analysis</h2>-->
+                </div>  
+                
+                <div class='Courses-names'>
+                    <div class="subtitle">
+                        <ul>
+                            I developed a user-friendly R package that integrates genomic and transcriptomic data to identify cancer-associated genes 
+                            
+                            <p>[Dr. Pablo Camara]</p>
+                        </ul>
+                    </div>
+                </div>
+        
+             </div>
+        
+            <div class='Courses-elements'>
+                
+                <div class="Courses-img-background" style="background-image:url(/assets/Lac_Repressor.png)">
+                </div>
+        
+                <div class='Courses-subjects'>
+                    <!--<h2>B cell tolerance checkpoints</h2>-->
+                </div>  
+                
+                <div class='Courses-names'>
+                    <div class="subtitle">
+                        <ul>
+                            I studied the integrity of B cell tolerance checkpoints in patients with pemphigus vulgaris
+                            
+                            <p>[Dr. Aimee Payne]</p>
+                        </ul>
+                    </div>
+                </div>
+        
+             </div>
+        
+        </div>
+    
+    </div>
+    
+</body> 
+
+<script>
+    const subjects = document.querySelectorAll('.Courses-elements');
+
+    subjects.forEach(subject => {
+        subject.addEventListener('mouseover', () => {
+        subject.childNodes[1].classList.add('image-blur');
+        });
+
+    subject.addEventListener('mouseout', () => {
+        subject.childNodes[1].classList.remove('image-blur');
+        });
+    });
+</script>
+    
+<!--<div class='footer'>
+    <p style='padding-right:20px;'>Biophysics photo: David Goodsell 2016</p>
+</div>-->
+
+    
+</html>
+    
